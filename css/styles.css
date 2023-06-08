@@ -109,12 +109,22 @@ body {
   color: rgba(255, 255, 255, 0.74);
 }
 
-.input_checkbox input,
-.signup_checkbox input {
+.input_checkbox input {
   display: flex;
   appearance: none;
   height: 16px;
   width: 16px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.452);
+  cursor: pointer;
+  position: relative;
+}
+
+.signup_checkbox input {
+  display: flex;
+  appearance: none;
+  height: 16px;
+  width: 22px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.452);
   cursor: pointer;
@@ -245,10 +255,6 @@ input:-webkit-autofill:active {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-weight: bold;
-}
-
-.signup_checkbox {
-  width: initial;
 }
 
 .signup_checkbox label,
