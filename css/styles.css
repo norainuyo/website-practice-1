@@ -123,8 +123,8 @@ body {
 .signup_checkbox input {
   display: flex;
   appearance: none;
-  height: 16px;
-  width: 22px;
+  height: 19px;
+  width: 26px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.452);
   cursor: pointer;
@@ -144,14 +144,25 @@ body {
   text-shadow: 0 0 0 transparent;
   transition: color 200ms ease-out, text-shadow 150ms ease-out 25ms;
 } */
-.input_checkbox input::after,
-.signup_checkbox input::after {
+.input_checkbox input::after {
   position: absolute;
   content: "";
   aspect-ratio: 1;
   width: 8px;
   height: 8px;
   margin: auto;
+  inset: 0;
+  transition: color 200ms ease-out, text-shadow 150ms ease-out 25ms;
+}
+.signup_checkbox input::after {
+  position: absolute;
+  content: "";
+  aspect-ratio: 1;
+  width: 10px;
+  height: 9px;
+  margin: 20%;
+  margin-left: 21%;
+
   inset: 0;
   transition: color 200ms ease-out, text-shadow 150ms ease-out 25ms;
 }
